@@ -1,34 +1,3 @@
 "# AssuranceDecoratorPattern"
-```plantuml
-@startuml
-interface Assurance{
-    int cost()
-}
-abstract AssuranceDecorator{
-    Assurance assurance
-    int cost()
-}
-class ResponsabilteCivile{
-    int cost()
-}
-class DommageEtCollision{
-    int cost()
-}
-class Incendie{
-    int cost()
-}
-class Vol{
-    int cost()
-}
-class Inondation{
-    int cost()
-}
-Assurance <.. ResponsabilteCivile
-Assurance <.. AssuranceDecorator
-AssuranceDecorator o-- Assurance
-AssuranceDecorator <|-- Inondation
-AssuranceDecorator <|-- DommageEtCollision
-AssuranceDecorator <|-- Incendie
-AssuranceDecorator <|-- Vol
-@enduml
-```
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ayoubgrioui/assurancedecoratorpattern/main/Instance.puml)
+
